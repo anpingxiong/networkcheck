@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/pre-dexed/release/classes-2d35a985cbd3acbcfcca0280e79fc01e8e91eda1.jar" />
+    </item>
+    <item
+        jar="/home/anping/project/android/blinksdk/NetworkCheck/app/libs/commons-net-3.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f76ff64f941e71395a0e07cad82ee44310eea842">
+        <dex dex="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/pre-dexed/release/commons-net-3.2-423215ebeb30eb11fae8c9a13b18b929816c4559.jar" />
+    </item>
+    <item
+        jar="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/pre-dexed/release/internal_impl-22.1.1-e971b58ef7276e625b94e3d4c10a43faedcd58eb.jar" />
+    </item>
+    <item
+        jar="/home/anping/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/pre-dexed/release/support-annotations-22.1.1-f454bcf8bfddc39fc569cabd038480c9dd4a8e0d.jar" />
+    </item>
+    <item
+        jar="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/home/anping/project/android/blinksdk/NetworkCheck/app/build/intermediates/pre-dexed/release/classes-439c8acd84fa1046fba0726354d4b0a046255f6c.jar" />
+    </item>
+
+</items>
