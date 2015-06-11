@@ -10,13 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import demo.networkcheck.MainActivity;
+import demo.networkcheck.constants.NetWorkConstant;
 
 /**
  * Created by anping on 15-6-10.
  */
 public class TraceRouteTask extends AsyncTask {
     public EditText textView;
-    private static final String PING_TEMPLATE = "ping -c 1 -t %d  %s";
+    private static final String PING_TEMPLATE = "ping  -W %d -c 1 -t %d  %s";
     List<String>  ips  = new ArrayList<>();
     public TraceRouteTask(EditText textView, List<String> ips) {
         super();
@@ -77,7 +78,7 @@ public class TraceRouteTask extends AsyncTask {
         BufferedReader reader = null;
         Process process = null;
         try {
-            String pingCmd = String.format(PING_TEMPLATE, i, address);
+            String pingCmd = String.format(PING_TEMPLATE, NetWorkConstant.PintTimeOut,i, address);
             process = Runtime.getRuntime().exec(pingCmd);
             reader = new BufferedReader(new InputStreamReader(
                     process.getInputStream()));

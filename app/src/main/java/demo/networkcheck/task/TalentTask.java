@@ -8,6 +8,7 @@ import org.apache.commons.net.telnet.TelnetClient;
 import java.io.IOException;
 
 import demo.networkcheck.MainActivity;
+import demo.networkcheck.constants.NetWorkConstant;
 import demo.networkcheck.utils.IpUtils;
 
 /**
@@ -31,6 +32,7 @@ public class TalentTask extends AsyncTask {
             for (int port : IpUtils.getPort()) {
                 TelnetClient tc = new TelnetClient();
                 try {
+                    tc.setConnectTimeout(NetWorkConstant.telnetTimeOut);
                     tc.connect(ip, port);
                     boolean result = tc.isConnected();
                     boolean avalibale = tc.isAvailable();

@@ -40,7 +40,7 @@ public class IpUtils {
 
     public static List<Integer> getPort() {
         if (ports.size() == 0) {
-            ports.add(80);
+            ports.add(80);ports.add(5222);
         }
         return ports;
     }

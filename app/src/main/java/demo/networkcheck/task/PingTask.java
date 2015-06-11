@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import demo.networkcheck.MainActivity;
+import demo.networkcheck.constants.NetWorkConstant;
 import demo.networkcheck.utils.IpUtils;
 
 /**
@@ -15,7 +16,7 @@ import demo.networkcheck.utils.IpUtils;
  */
 public class PingTask extends AsyncTask {
     public EditText textView;
-    private static final String PING_TEMPLATE = "ping -W 500 -i 0.2 -c 2 %s";
+    private static final String PING_TEMPLATE = "ping -W %d -i 0.2 -c 2 %s";
 
     public PingTask(EditText textView) {
         super();
@@ -66,7 +67,7 @@ public class PingTask extends AsyncTask {
         BufferedReader reader = null;
         Process process = null;
         try {
-            String pingCmd = String.format(PING_TEMPLATE, address);
+            String pingCmd = String.format(PING_TEMPLATE, NetWorkConstant.PintTimeOut,address);
             process = Runtime.getRuntime().exec(pingCmd);
             reader = new BufferedReader(new InputStreamReader(
                     process.getInputStream()));
